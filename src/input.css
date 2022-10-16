@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flexCenter {
+    @apply 
+        flex
+        items-center
+        justify-center
+};
+
+.circle {
+    @apply
+    rounded-full bg-white flexCenter flex-col
+    2xl:w-40 2xl:h-40
+    w-32 h-32
+}
