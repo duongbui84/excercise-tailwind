@@ -12,6 +12,9 @@
 .circle {
     @apply
     rounded-full bg-white flexCenter flex-col
-    2xl:w-40 2xl:h-40
-    w-32 h-32
-}
+    2xl:w-40 
+    2xl:h-40
+    w-32 
+    h-32
+};
+

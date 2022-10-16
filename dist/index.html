@@ -12,7 +12,7 @@
     <title>Tailwind</title>
 </head>
 <body>
-    <header class="flexCenter py-5">
+    <header class="flexCenter fixed z-50 top-0 w-full py-5 shadow-custom bg-white">
         <div class="container flex items-center justify-around">
             <div class="flex">
                 <img class="w-44 h-10" src="/dist/img/logo.png" alt="logo img">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-    <section class="flexCenter relative">
+    <section class="flexCenter relative mt-20">
         <div class="container flexCenter flex-col gap-20 lg:flex-row lg:gap-6">    
             <div class="basis-1/2 bg-transparent">
                 <h2 class="text-4xl xl:text-5xl 2xl:text-6xl font-bold w-auto z-10 xl:mr-[-24rem]">Dịch vụ Tiêm chủng Vắc-xin <br>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="flexCenter">
+    <section class="flexCenter mt-20">
         <div class="container my-20 flexCenter flex-col gap-12">
             <div class="flexCenter gap-12 flex-col lg:flex-row">
                 <div class="basis-1/3 flexCenter flex-col text-center">
@@ -141,13 +141,13 @@
             </div>
         </div>
     </section>
-    <section class="flexCenter relative 2xl: mx-10 bg-[#2597D8] rounded-[160px]">
+    <section class="flexCenter mt-24 relative xl:mx-24 2xl:mx-10 xxl:mx-32 bg-[#2597D8] rounded-[160px]">
         <span class="absolute right-5 top-0 -translate-y-1/2"><img src="/dist/img/Spring_Fat_Tall0001 1.png" alt="spring"></span>
         <span class="absolute left-10 bottom-0 translate-y-1/2"><img src="/dist/img/Torus_Half_Standing_3_0002 1.png" alt="torus"></span>
         <div class="container relative">
             <h2 class="text-4xl text-white text-center mt-20 mb-6">Quy trình dịch vụ Tiêm chủng Vắc-xin tại Bệnh viện Phương Đông</h2>
             <span class="absolute transform left-1/2 -translate-x-1/2"><img src="/dist/img/white-line.png" alt="white-line"></span>
-            <div class="flexCenter flex-wrap 2xl:flex-nowrap gap-14 py-20">
+            <div class="flexCenter flex-wrap 2xl:flex-nowrap gap-14 lg:gap-x-28 2xl:gap-14 py-20">
                 <div class="basis-1/5 flex flex-col">
                     <div class="bg-transparent p-4 border-dashed border-white border-[0.125rem] rounded-full">
                         <div class="flexCenter w-full h-full rounded-full bg-blue shadow-buttonCircle p-5">
@@ -226,6 +226,506 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="flexCenter mt-40">
+        <div class="container flexCenter flex-col lg:flex-row">
+            <div class="basis-1/2 md:mx-20 lg:mx-0">
+                <h2 class="font-bold text-[2.375rem]">Quyền lợi của khách hàng</h2>
+                <div class="mt-6 mb-10"><img src="/dist/img/blue-line.png" alt="blue-line"></div>
+                <ul>
+                    <li class="relative before:w-5 before:h-5 before:absolute before:top-0 before:left-0 pl-8 pb-4 before:bg-[url(/dist/img/plus-bg-green.png)]">
+                        <p class="font-bold">Được khám bệnh, chữa bệnh và chăm sóc kịp thời, tận tình chu đáo </p>
+                        <p>Được khám chữa bệnh bằng phương pháp an toàn, hiệu quả; phù hợp với tình trạng bệnh tật và nhu cầu của người bệnh.</p>
+                    </li>
+                    <li class="relative before:w-5 before:h-5 before:absolute before:top-0 before:left-0 pl-8 pb-4 before:bg-[url(/dist/img/plus-bg-green.png)]">
+                        <p class="font-bold">Được tôn trọng các giá trị và niềm tin cá nhân </p>
+                        <p>Được tôn trọng quyền riêng tư, các nhu cầu tình cảm, xã hội, văn hóa, tín ngưỡng. Được bảo mật các thông tin cá nhân và thông tin y tế.</p>
+                    </li>
+                    <li class="relative before:w-5 before:h-5 before:absolute before:top-0 before:left-0 pl-8 pb-4 before:bg-[url(/dist/img/plus-bg-green.png)]">
+                        <p class="font-bold">Được bảo vệ an toàn</p>
+                        <p>Được cung cấp dịch vụ y tế đảm bảo về chất lượng dịch vụ và an toàn người bệnh. Được bảo vệ khỏi những rủi ro, được hỗ trợ bảo quản tài sản.</p>
+                    </li>
+                    <li class="relative before:w-5 before:h-5 before:absolute before:top-0 before:left-0 pl-8 pb-4 before:bg-[url(/dist/img/plus-bg-green.png)]">
+                        <p class="font-bold">Được cung cấp thông tin </p>
+                        <p>Được bác sĩ tư vấn, giải thích đầy đủ về tình trạng bệnh tật, hướng điều trị, khả năng thành công, phục hồi, hậu quả nếu không điều trị và những rủi ro có thể xảy ra.</p>
+                    </li>
+                </ul>
+                <h3 class="font-bold text-lg mb-4">Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</h3>
+                <div class="flex bg-[#F5F5F5] rounded-[1.6875rem] overflow-hidden  xl:w-3/4">
+                    <input class="bg-[#F5F5F5] flex-1 pl-6 py-4" placeholder="Nhập số điện thoại..." type="text">
+                    <div class="flexCenter m-2 bg-orange rounded-full text-white font-bolt shadow-buttonOrange">
+                        <img class="p-4 lg:py-2" src="/dist/img/fly-paper.png" alt="fly img">
+                        <p class="pr-4 text-sm xl:text-base">GỬI THÔNG TIN</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="basis-1/2">
+                <img src="/dist/img/goi-vac-xin.png" alt="goi-vac-xin">
+                <div class="ml-20"><img src="/dist/img/orange-line.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24">
+        <div class="flexCenter flex-col xl:flex-row">
+            <div class="pr-10">
+                <img src="/dist/img/feedback.png" alt="feedback image">
+            </div>
+            <div class="mx-20 xl:mx-0">
+                <h2 class="font-bold text-4xl">Cảm nhận của khách hàng sau khi sử dụng dịch vụ</h2>
+                <div class="mt-6 mb-8"><img src="/dist/img/blue-line.png" alt=""></div>
+                <p class="max-w-[75%]">Dưới đây là những chia sẻ từ khách hàng dành cho Bệnh viện Đa khoa Phương Đông và tập thể điều dưỡng Khoa kiểm soát nhiễm khuẩn đã tận tình chăm sóc, điều trị trong suốt thời gian qua.</p>
+                <!-- Slider -->
+                <div class="mt-14 relative flex">
+                    <div class="max-w-[450px] xl:-ml-28 mr-8 shadow-custom rounded-2xl bg-white border">
+                        <p class="p-6">Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.</p>
+                        <div class="flex gap-4 items-center justify-around pb-6 px-6">
+                            <div class="basis-1/6"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                            <div class="basis-3/6">
+                                <p class="font-bold">Nguyễn Quỳnh Trang</p>
+                                <p>Hà Nội</p>
+                            </div>
+                            <div class="relative basis-1/6"><img class="absolute right-0" src="/dist/img/5star.png" alt="voting"></div>
+                        </div>
+                    </div>
+                    <div class="max-w-[450px] mr-8 shadow-custom rounded-2xl border">
+                        <p class="p-6">Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.</p>
+                        <div class="flex gap-4 items-center justify-around pb-6 px-6">
+                            <div class="basis-1/6"><img src="/dist/img/avatar2.png" alt="avatar1"></div>
+                            <div class="basis-3/6">
+                                <p class="font-bold">Nguyễn Quỳnh Trang</p>
+                                <p>Hà Nội</p>
+                            </div>
+                            <div class="relative basis-1/6"><img class="absolute right-0" src="/dist/img/5star.png" alt="voting"></div>
+                        </div>
+                    </div>
+                    <div class="max-w-[450px] mr-8 shadow-custom rounded-2xl border hidden 2xl:block">
+                        <p class="p-6">Trong thời gian chữa bệnh cho chồng tôi ở bệnh viện. Tôi thật sự cảm ơn các bác sĩ đã cứu chữa cho chồng tôi rất giỏi. Còn các điều dưỡng y tá ở phòng thì thái độ rất hòa nhã, chăm sóc tận tình, luôn luôn theo dõi sức khỏe chồng tôi thật sát sao, luôn có trách nhiệm.</p>
+                        <div class="flex gap-4 items-center justify-around pb-6 px-6">
+                            <div class="basis-1/6"><img src="/dist/img/avatar3.png" alt="avatar1"></div>
+                            <div class="basis-3/6">
+                                <p class="font-bold">Nguyễn Quỳnh Trang</p>
+                                <p>Hà Nội</p>
+                            </div>
+                            <div class="relative basis-1/6"><img class="absolute right-0" src="/dist/img/5star.png" alt="voting"></div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-10 left-20"><img src="/dist/img/orange-line.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 flexCenter flex-col relative">
+        <div class="absolute -z-10 top-28"><img src="/dist/img/The-world-bg.png" alt=""></div>
+        <h2 class="text-4xl font-bold">Những lưu ý cần thiết dành cho khách hàng</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+        <div class="container gap-12 flexCenter">
+            <div class="basis-1/3 child:my-6">
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6 2xl:-ml-24">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6 2xl:-ml-24">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+            </div>
+            <div class="basis-1/3 hidden xl:block relative">
+                <div class="mb-10">
+                    <img src="/dist/img/circle-blue-large.png" alt="">
+                    <div class="absolute top-0 left-0 mt-[-1.7rem] mr-8">
+                        <img src="/dist/img/woman-doctor-liked-pose.png" alt="">
+                    </div>
+                </div>
+                <div class="relative left-1/2 -translate-x-1/2 w-fit flexCenter bg-orange rounded-full text-white font-bolt  shadow-buttonOrange">
+                    <img class="p-4 lg:py-2" src="/dist/img/Frame.png" alt="phone img">
+                    <p class="pr-4 text-sm xl:text-base">ĐĂNG KÝ TƯ VẤN</p>
+                </div>
+            </div>
+            <div class="basis-1/3 child:my-6">
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6 2xl:ml-24">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6 2xl:ml-24">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+                <div class="w-full rounded-2xl shadow-custom2 py-4 px-6">
+                    <p class="font-bold pb-2">Cần chuẩn bị gì trước khi đăng ký gói dịch vụ?</p>
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 flexCenter flex-col">
+        <h2 class="text-4xl font-bold">Dịch vụ của Bệnh viện Phương Đông có gì đặc biệt?</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+        <div class="container flex flex-col mx-20 lg:mx-2 lg:flex-row 2xl:gap-12 2xl:ml-56 relative">
+            <div class="basis-1/2">
+                <div class="2xl:-ml-28 2xl:mr-28 flex items-center rounded-3xl my-8 bg-[#ECF3F6]">
+                    <span class="basis-1/5 p-4 w-full h-full">
+                        <img src="/dist/img/hospital-icon.png" alt="">
+                    </span>
+                    <div class="basis-4/5 pr-3">
+                        <p class="font-bold text-xl">Tiêu chuẩn Bệnh viện 5 sao</p>
+                        <p class="text-sm font-normal">Bệnh viện Phương Đông được xây dựng theo tiêu chuẩn 5 sao, đặt mục tiêu trở thành nhà cung cấp hàng đầu các dịch vụ chăm sóc y tế đạt đẳng cấp thế giới thu hút khách hàng trong nước và khu vực châu Á.</p>
+                    </div>
+                </div>
+                <div class="flex items-center rounded-3xl mb-8 bg-[#ECF3F6]">
+                    <span class="basis-1/5 p-4 w-full h-full">
+                        <img src="/dist/img/location-icon.png" alt="">
+                    </span>
+                    <div class="basis-4/5 pr-3">
+                        <p class="font-bold text-xl">Lợi thế địa lý của Phương Đông</p>
+                        <p class="text-sm font-normal">Bệnh viện Đa khoa Phương Đông được coi là điểm sáng về y tế khu vực phía Tây Hà Nội, là địa chỉ khám chữa bệnh tin cậy cho gần 180.000 cư dân có nhu cầu sử dụng dịch vụ y tế chất lượng cao.</p>
+                    </div>
+                </div>
+                <div class="2xl:-ml-28 2xl:mr-28 flex items-center rounded-3xl mb-8 bg-[#ECF3F6]">
+                    <span class="basis-1/5 p-4 w-full h-full">
+                        <img src="/dist/img/patient-icon.png" alt="">
+                    </span>
+                    <div class="basis-4/5 pr-3">
+                        <p class="font-bold text-xl">Đội ngũ bác sĩ giàu kinh nghiệm, giàu tâm huyết</p>
+                        <p class="text-sm font-normal">Bệnh viện Đa khoa Phương Đông quy tụ đội ngũ bác sĩ có trình độ chuyên môn cao, giàu kinh nghiệm, có nhiều năm công tác và giữ vị trí quan trọng tại các bệnh viện tuyến trung ương.</p>
+                    </div>
+                </div>
+                <div class="flex items-center rounded-3xl bg-[#ECF3F6]">
+                    <span class="basis-1/5 p-4 w-full h-full">
+                        <img src="/dist/img/hospital-bed-icon.png" alt="">
+                    </span>
+                    <div class="basis-4/5 pr-3">
+                        <p class="font-bold text-xl">Trang thiết bị hiện đại</p>
+                        <p class="text-sm font-normal">Bệnh viện Đa khoa Phương Đông đầu tư đồng bộ về cơ sở vật chất, trang thiết bị nhập khẩu từ các thương hiệu hàng đầu thế giới như: Mỹ, Nhật Bản,... đảm bảo các tiêu chí về hiệu quả, an toàn, tiết kiệm thời gian, chính xác và thân thiện với môi trường.</p>
+                    </div>
+                </div>      
+            </div>
+            <div class="basis-1/2">
+                <div class="-z-10 mr-[-20rem]"><img src="/dist/img/woman-doctor-des-pose.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 flexCenter relative flex-col">
+        <h2 class="text-4xl font-bold">Đội ngũ bác sĩ giàu nhiệt huyết, tận tụy vì khách hàng</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+        <div class="absolute -bottom-32"><img src="/dist/img/orange-line.png" alt=""></div>
+        <div class="container gap-12 flexCenter">
+            <div class="basis-1/2 lg:basis-1/3 xl:basis-1/4 h-full text-center relative">
+                <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
+                    <img src="/dist/img/doctor1.png" alt="">
+                </div>
+                <div class="w-auto absolute -bottom-20 overflow-hidden h-20 hover:h-fit p-6 shadow-custom bg-white rounded-[0px_0px_15px_15px]">
+                    <h3 class="font-bold">NGUYỄN TRUNG CHÍNH</h3>
+                    <p class="text-[#0A9949] text-sm">PGS.TS. Bác sĩ Ung bướu</p>
+                    <div class="text-xs flexCenter flex-col">
+                        <p class="py-6">Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học giá trị về sức khỏe sinh sản phụ nữ, TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc cho hàng triệu thai phụ trong hành trình đón con yêu chào đời.</p>
+                        <span><img src="/dist/img/5star.png" alt=""></span>
+                        <p>4.8/5 (38 bình chọn)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-1/2 lg:basis-1/3 xl:basis-1/4 h-full text-center relative">
+                <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
+                    <img src="/dist/img/doctor2.png" alt="">
+                </div>
+                <div class="w-auto absolute -bottom-20 overflow-hidden h-20 hover:h-fit p-6 shadow-custom bg-white rounded-[0px_0px_15px_15px]">
+                    <h3 class="font-bold">NGUYỄN HUY BẠO</h3>
+                    <p class="text-[#0A9949] text-sm">TTND.TS.Bác sĩ CKII Sản phụ khoa</p>
+                    <div class="text-xs flexCenter flex-col">
+                        <p class="py-6">Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học giá trị về sức khỏe sinh sản phụ nữ, TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc cho hàng triệu thai phụ trong hành trình đón con yêu chào đời.</p>
+                        <span><img src="/dist/img/5star.png" alt=""></span>
+                        <p>4.8/5 (38 bình chọn)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block basis-1/3 xl:basis-1/4 h-full text-center relative">
+                <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
+                    <img src="/dist/img/doctor3.png" alt="">
+                </div>
+                <div class="w-auto absolute -bottom-20 overflow-hidden h-20 hover:h-fit p-6 shadow-custom bg-white rounded-[0px_0px_15px_15px]">
+                    <h3 class="font-bold">TRẦN KINH TRANG</h3>
+                    <p class="text-[#0A9949] text-sm">Bác sĩ CKII Nhi khoa - Siêu âm tim</p>
+                    <div class="text-xs flexCenter flex-col">
+                        <p class="py-6">Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học giá trị về sức khỏe sinh sản phụ nữ, TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc cho hàng triệu thai phụ trong hành trình đón con yêu chào đời.</p>
+                        <span><img src="/dist/img/5star.png" alt=""></span>
+                        <p>4.8/5 (38 bình chọn)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block basis-1/4 h-full text-center relative">
+                <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
+                    <img src="/dist/img/doctor4.png" alt="">
+                </div>
+                <div class="w-auto absolute -bottom-20 overflow-hidden h-20 hover:h-fit p-6 shadow-custom bg-white rounded-[0px_0px_15px_15px]">
+                    <h3 class="font-bold">NGUYỄN THỊ KIM YẾN</h3>
+                    <p class="text-[#0A9949] text-sm">ThS. Dược sỹ</p>
+                    <div class="text-xs flexCenter flex-col">
+                        <p class="py-6">Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học giá trị về sức khỏe sinh sản phụ nữ, TTND.TS.BS Nguyễn Huy Bạo - Nguyên Giám đốc Bệnh viện Phụ sản Hà Nội đã mang đến hạnh phúc cho hàng triệu thai phụ trong hành trình đón con yêu chào đời.</p>
+                        <span><img src="/dist/img/5star.png" alt=""></span>
+                        <p>4.8/5 (38 bình chọn)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-48 flexCenter flex-col bg-bgRespon bg-cover bg-no-repeat w-full">
+        
+        <h2 class="text-4xl font-bold pt-20 text-center">Thắc mắc của khách hàng khi sử dụng dịch vụ <br> tại Bệnh viện Phương Đông</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+        <div class="container pb-20 gap-10 relative flex items-center flex-col ">
+
+            <span class="absolute"><img src="/dist/img/white-line-vertical.png" alt=""></span>
+
+            <div class="flex -ml-12 items-center gap-10">
+                <div class="bg-white relative basis-1/2 w-full flexCenter gap-4 p-6 rounded-3xl 
+                 after:content-[' '] after:border-[3rem] after:border-white
+                after:absolute after:right-0 after:translate-x-full after:z-10
+                after:border-r-transparent after:border-t-transparent after:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+                <div class="basis-1/2 flex items-center">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2 bg-white">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-10 ml-12">
+            
+                <div class=" basis-1/2 flex items-center flex-row-reverse">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="bg-white flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" relative bg-white
+                basis-1/2 flexCenter gap-4 p-6 rounded-3xl
+                before:content-[' '] before:border-[3rem] before:border-white
+                before:absolute before:left-0 before:-translate-x-full before:z-10
+                before:border-l-transparent before:border-t-transparent before:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex -ml-12 items-center gap-10">
+                <div class="bg-white relative basis-1/2 w-full flexCenter gap-4 p-6 rounded-3xl 
+                 after:content-[' '] after:border-[3rem] after:border-white
+                after:absolute after:right-0 after:translate-x-full after:z-10
+                after:border-r-transparent after:border-t-transparent after:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+                <div class="basis-1/2 flex items-center">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2 bg-white">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-10 ml-12">
+            
+                <div class=" basis-1/2 flex items-center flex-row-reverse">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="bg-white flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" relative bg-white
+                basis-1/2 flexCenter gap-4 p-6 rounded-3xl
+                before:content-[' '] before:border-[3rem] before:border-white
+                before:absolute before:left-0 before:-translate-x-full before:z-10
+                before:border-l-transparent before:border-t-transparent before:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex -ml-12 items-center gap-10">
+                <div class="bg-white relative basis-1/2 w-full flexCenter gap-4 p-6 rounded-3xl 
+                 after:content-[' '] after:border-[3rem] after:border-white
+                after:absolute after:right-0 after:translate-x-full after:z-10
+                after:border-r-transparent after:border-t-transparent after:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+                <div class="basis-1/2 flex items-center">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2 bg-white">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-10 ml-12">
+            
+                <div class=" basis-1/2 flex items-center flex-row-reverse">
+                    <span><img src="/dist/img/white-line.png" alt=""></span>
+                    <div class="bg-white flexCenter w-fit gap-4 py-4 px-6 rounded-2xl shadow-custom2">
+                        <div class="basis-1/4"><img src="/dist/img/avatar1.png" alt="avatar1"></div>
+                        <div class="basis-3/4">
+                            <p class="font-bold text-lg">Nguyễn Minh Ánh</p>
+                            <p class="text-sm font-normal">Đã hỏi: Ngày 25/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" relative bg-white
+                basis-1/2 flexCenter gap-4 p-6 rounded-3xl
+                before:content-[' '] before:border-[3rem] before:border-white
+                before:absolute before:left-0 before:-translate-x-full before:z-10
+                before:border-l-transparent before:border-t-transparent before:border-b-transparent">
+                    <div class="basis-2/5"><img src="/dist/img/pregnancy-img.jpg" alt=""></div>
+                    <div class="basis-3/5">
+                        <p class="text-lg font-bold pb-4">Bệnh viện Phương Đông có tiêm phòng trước khi mang thai không?</p>
+                        <p class="text-sm font-normal">Xin chào bệnh viện, em chưa có kinh nghiệm về thai sản và sắp tới em có dự định có em bé, em muốn hỏi bên bệnh viện mình có xét nghiệm và tiêm phòng trước khi mang thai không ạ và em mới bị COVID-19 hiện tại đã khỏi thì có ảnh hưởng gì đến việc tiêm phòng không? Nếu có thì phải chờ bao lâu mới được tiêm phòng và chi phí các mũi tiêm là như thế nào ạ? Cảm ơn quý bệnh viện.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 flexCenter relative flex-col">
+        <h2 class="text-4xl font-bold">Hình ảnh khách hàng khi sử dụng gói dịch vụ Tiêm chủng Vắc-xin</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+        <div class="container px-20">
+            <div class="rounded-3xl mb-5 overflow-hidden">
+                <img src="/dist/img/chick.jpg" alt="">
+            </div>
+            <div class="relative flexCenter">
+                <span class="absolute -left-12"><img src="/dist/img/arrow-l.png" alt=""></span>
+                <div class="flex gap-2">
+                    <div class="w-auto"><img src="/dist/img/scroll1.png" alt=""></div>
+                    <div class="w-auto"><img src="/dist/img/scroll2.png" alt=""></div>
+                    <div class="w-auto"><img src="/dist/img/scroll3.png" alt=""></div>
+                    <div class="w-auto hidden lg:block"><img src="/dist/img/scroll4.png" alt=""></div>
+                    <div class="w-auto hidden lg:block"><img src="/dist/img/scroll5.png" alt=""></div>
+                    <div class="w-auto hidden xl:block"><img src="/dist/img/scroll6.png" alt=""></div>
+                    <div class="w-auto hidden xl:block"><img src="/dist/img/scroll7.png" alt=""></div>
+                </div>
+                <span class="absolute -right-12"><img src="/dist/img/arrow-r.png" alt=""></span>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 w-full flexCenter relative flex-col bg-contain bg-no-repeat bg-bgSlider">
+        <h2 class="text-4xl font-bold mt-20 text-white">Video khách hàng thăm khám tại Bệnh viện Phương Đông</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/white-line.png" alt=""></div>
+        <div class="container px-14 2xl:px-0 flexCenter">
+            <div class="flexCenter gap-4 relative">
+                    <span class="absolute -left-12 top-28"><img src="/dist/img/arrow-l.png" alt=""></span>
+            
+                    <div class="basis-1/2 xl:basis-1/3 flexCenter text-center flex-col ">
+                        <div class="rounded-2xl overflow-hidden relative" >
+                            <a href="#">
+                                <img src="/dist/img/slider-1.png" alt="">
+                            </a>
+                            <span class="absolute top-1/2 -translate-y-1/2"><img src="/dist/img/logos_youtube-icon.png" alt=""></span>
+                        </div>
+                        <div class="bg-white py-4 px-9 w-5/6 rounded-2xl shadow-custom relative top-0 -translate-y-1/2">
+                            <p class="font-bold pb-4">Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin</p>
+                            <ul class="flex gap-4">
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/calc.svg" alt="">
+                                    22/07/2022
+                                </li>
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/eye.svg" alt="">
+                                    149 người đã xem
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="basis-1/2 xl:basis-1/3 flexCenter text-center flex-col ">
+                        <div class="rounded-2xl overflow-hidden relative" >
+                            <a href="#">
+                                <img src="/dist/img/slider-1.png" alt="">
+                            </a>
+                            <span class="absolute top-1/2 -translate-y-1/2"><img src="/dist/img/logos_youtube-icon.png" alt=""></span>
+                        </div>
+                        <div class="bg-white py-4 px-9 w-5/6 rounded-2xl shadow-custom relative top-0 -translate-y-1/2">
+                            <p class="font-bold pb-4">Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin</p>
+                            <ul class="flex gap-4">
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/calc.svg" alt="">
+                                    22/07/2022
+                                </li>
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/eye.svg" alt="">
+                                    149 người đã xem
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden basis-1/3 xl:flex items-center justify-center text-center flex-col ">
+                        <div class="rounded-2xl overflow-hidden relative" >
+                            <a href="#">
+                                <img src="/dist/img/slider-1.png" alt="">
+                            </a>
+                            <span class="absolute top-1/2 -translate-y-1/2"><img src="/dist/img/logos_youtube-icon.png" alt=""></span>
+                        </div>
+                        <div class="bg-white py-4 px-9 w-5/6 rounded-2xl shadow-custom relative top-0 -translate-y-1/2">
+                            <p class="font-bold pb-4">Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm chủng Vắc-xin</p>
+                            <ul class="flex gap-4">
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/calc.svg" alt="">
+                                    22/07/2022
+                                </li>
+                                <li class="flex gap-2">
+                                    <img src="/dist/img/eye.svg" alt="">
+                                    149 người đã xem
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <span class="absolute -right-12 top-28"><img src="/dist/img/arrow-r.png" alt=""></span>
+                </div>
         </div>
     </section>
 </body>

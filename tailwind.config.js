@@ -14,24 +14,24 @@ module.exports = {
         orange: 'linear-gradient(180deg, rgb(255, 180, 105) 0%, rgb(229, 119, 9) 100%)',
         blue: 'linear-gradient(135deg, #4EBEFF 0%, #0679BB 100%)',
         textGreen: 'linear-gradient(135deg, #2891CC 0%, #0A9949 100%)',
-        dottedAround: 'url(/dist/img/dotted-circle.png)',
-      },
-      boxShadow: {
-        buttonOrange: '0px 8px 16px rgba(229, 119, 9, 0.35)',
-        buttonCircle: '0px 0px 16px rgba(0, 0, 0, 0.35)',
+        'bgRespon': "url('/dist/img/bg-respon.jpg')",
+        'bgSlider': "url('/dist/img/bg-video-slider.jpg')",
       },
       colors: {
-        orangeCustom: 'rgb(229, 119, 9)'
+        orangeCustom: 'rgb(229, 119, 9)',
       },
       borderRadius: {
         bannerLeftBottom: '0px 0px 0px 130px'
       },
       boxShadow: {
-        custom: '0px 8px 40px rgba(0, 0, 0, 0.15)'
+        custom: '0px 8px 40px rgba(0, 0, 0, 0.15)',
+        buttonOrange: '0px 8px 16px rgba(229, 119, 9, 0.35)',
+        buttonCircle: '0px 0px 16px rgba(0, 0, 0, 0.35)',
+        custom2: '0px 8px 48px rgba(40, 145, 204, 0.2)'
       },
       container: {
         screens: {
-          '3xl': '1408px',
+          'xxl': '1408px',
         },
         padding: {
           DEFAULT: '1rem',
@@ -43,5 +43,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+  }
+  ],
 }
