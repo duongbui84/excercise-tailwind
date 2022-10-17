@@ -16,6 +16,9 @@ module.exports = {
         textGreen: 'linear-gradient(135deg, #2891CC 0%, #0A9949 100%)',
         'bgRespon': "url('/dist/img/bg-respon.jpg')",
         'bgSlider': "url('/dist/img/bg-video-slider.jpg')",
+        'bgSectionEnd' : "url('/dist/img/bg-section-end.jpg')",
+        'bgKimtiem': "url('/dist/img/kimtiem.png')",
+        'bgFooter': "url('/dist/img/bg-footer.jpg')",
       },
       colors: {
         orangeCustom: 'rgb(229, 119, 9)',

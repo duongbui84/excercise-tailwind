@@ -7,17 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./default.css">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./mySwiper.css">
     <title>Tailwind</title>
 </head>
+
 <body>
     <header class="flexCenter fixed z-50 top-0 w-full py-5 shadow-custom bg-white">
         <div class="container flex items-center justify-around">
             <div class="flex">
                 <img class="w-44 h-10" src="/dist/img/logo.png" alt="logo img">
             </div>
-            <ul class="hidden lg:flex justify-around items-center flex-grow font-bold text-center text-sm mx-4">
+            <ul class="hidden child-hover:text-blue-400 child-hover:cursor-pointer lg:flex justify-around items-center flex-grow font-bold text-center text-sm mx-4">
                 <li class="mx-0.5">Giới thiệu</li>
                 <li class="mx-0.5">Đối tượng khách hàng</li>
                 <li class="mx-0.5">Quy trình</li>
@@ -26,10 +35,10 @@
                 <li class="mx-0.5">Đội ngũ bác sĩ</li>
                 <li class="mx-0.5">Hình ảnh & Video</li>
             </ul>
-            <div class="hidden lg:flex bg-orange rounded-full items-center shadow-buttonOrange">
+            <button class="hidden lg:flex bg-orange rounded-full items-center shadow-buttonOrange">
                 <img class="p-2" src="/dist/img/phone.png" alt="phone img">
                 <p class="pr-1 xl:pr-2 text-sm xl:text-base">Gọi 1900 1806</p>
-            </div>
+            </button>
             <div class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -44,16 +53,16 @@
                     Bảo vệ bản thân, bảo vệ mọi người</h2>
                 <p class="mt-6 mb-12">Vắc-xin ra đời được coi là một trong những thành tựu vĩ đại của nhân loại. Nhờ có Vắc xin, hàng triệu người trên thế giới tránh được nguy cơ tử vong và những di chứng, dị tật suốt đời do các bệnh truyền nhiễm như sởi, quai bị, rubella, thủy đậu, uốn ván...</p>
                 <div class="block lg:flex lg:gap-4 w-fit">
-                    <div class="flexCenter bg-orange rounded-full text-white font-bolt  shadow-buttonOrange">
+                    <button class="flexCenter bg-orange rounded-full text-white font-bolt  shadow-buttonOrange">
                         <img class="p-4 lg:py-2" src="/dist/img/Frame.png" alt="phone img">
                         <p class="pr-4 text-sm xl:text-base">ĐĂNG KÝ TƯ VẤN</p>
-                    </div>
-                    <div class="flexCenter mt-5 lg:mt-0 text-orangeCustom border border-orange-500 rounded-full">
+                    </button>
+                    <button class="flexCenter mt-5 lg:mt-0 text-orangeCustom border border-orange-500 rounded-full">
                         <p class="p-4 lg:py-0 font-bold">QUY TRÌNH TIÊM CHỦNG</p>
-                    </div>
+                    </button>
                 </div>
             </div>
-            <div class="-z-10 relative overflow-hidden lg:overflow-visible rounded-2xl bg-blue lg:rounded-bannerLeftBottom order-first lg:order-last basis-1/2 xl:basis-auto xl:mr-[-20rem]">
+            <div class="-z-10 relative overflow-hidden lg:overflow-visible rounded-2xl bg-blue lg:rounded-bannerLeftBottom order-first lg:order-last basis-1/2 xl:basis-auto">
                 <img  src="/dist/img/vaccine.png" alt="vaccine img">
                 <div class="flexCenter absolute bottom-2 left-2 p-3 lg:-bottom-12 lg:left-52 rounded-2xl bg-white shadow-custom">
                     <span class="mr-4 lg:w-16 lg:h-16 xl:w-auto xl:h-auto">
@@ -96,10 +105,10 @@
                 <div class="mt-6 mb-10"><img src="/dist/img/blue-line.png" alt="lineblue"></div>
                 <p class="mb-12">Bệnh viện Đa khoa Phương Đông cung cấp dịch vụ tư vấn và tiêm chủng vắc-xin dành cho cả trẻ em và người lớn với nhiều gói tiêm đa dạng, chi phí hợp lý, mang lại hiệu quả phòng bệnh tối ưu. Tiêm chủng tạo cho con người nền tảng phát triển khỏe mạnh, không dị tật, di chứng... góp phần thúc đẩy nguồn nhân lực cho các quốc gia. Từ đó giảm chi phí chăm sóc y tế, tăng năng suất lao động, góp phần quan trọng trong xóa đói giảm nghèo và thúc đẩy phát triển kinh tế, xã hội. <br>
                     Tiêm chủng vắc-xin là biện pháp phòng bệnh an toàn, hiệu quả, được áp dụng cho cả người lớn và trẻ em, đặc biệt là người già, người có bệnh nền mạn tính (tim mạch, tiểu đường, huyết áp...), người bị suy giảm miễn dịch… Để được tiêm phòng đầy đủ các loại vắc xin cần thiết, các gia đình nên lựa chọn những cơ sở y tế chuyên biệt về tiêm chủng, có đầy đủ cơ sở vật chất, trang thiết bị y tế để được tư vấn và tiêm vắc xin chất lượng, an toàn.</p>
-                <div class="flexCenter bg-orange rounded-full text-white font-bolt w-fit shadow-buttonOrange">
+                <button class="flexCenter bg-orange rounded-full text-white font-bolt w-fit shadow-buttonOrange">
                     <img class="p-4 lg:py-2" src="/dist/img/Frame.png" alt="phone img">
                     <p class="pr-4 text-sm xl:text-base">ĐĂNG KÝ TƯ VẤN</p>
-                </div>
+                </button>
             </div>
         </div>
     </section>
@@ -253,11 +262,11 @@
                 </ul>
                 <h3 class="font-bold text-lg mb-4">Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</h3>
                 <div class="flex bg-[#F5F5F5] rounded-[1.6875rem] overflow-hidden  xl:w-3/4">
-                    <input class="bg-[#F5F5F5] flex-1 pl-6 py-4" placeholder="Nhập số điện thoại..." type="text">
-                    <div class="flexCenter m-2 bg-orange rounded-full text-white font-bolt shadow-buttonOrange">
+                    <input class="bg-[#F5F5F5] flex-1 pl-6 py-4 outline-none" placeholder="Nhập số điện thoại..." type="text">
+                    <button class="flexCenter m-2 bg-orange rounded-full text-white font-bolt shadow-buttonOrange">
                         <img class="p-4 lg:py-2" src="/dist/img/fly-paper.png" alt="fly img">
                         <p class="pr-4 text-sm xl:text-base">GỬI THÔNG TIN</p>
-                    </div>  
+                    </button>  
                 </div>
             </div>
             <div class="basis-1/2">
@@ -413,7 +422,7 @@
                 </div>      
             </div>
             <div class="basis-1/2">
-                <div class="-z-10 mr-[-20rem]"><img src="/dist/img/woman-doctor-des-pose.png" alt=""></div>
+                <div class="-z-10 "><img src="/dist/img/woman-doctor-des-pose.png" alt=""></div>
             </div>
         </div>
     </section>
@@ -421,7 +430,7 @@
         <h2 class="text-4xl font-bold">Đội ngũ bác sĩ giàu nhiệt huyết, tận tụy vì khách hàng</h2>
         <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
         <div class="absolute -bottom-32"><img src="/dist/img/orange-line.png" alt=""></div>
-        <div class="container gap-12 flexCenter">
+        <div class="container gap-12 flex">
             <div class="basis-1/2 lg:basis-1/3 xl:basis-1/4 h-full text-center relative">
                 <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
                     <img src="/dist/img/doctor1.png" alt="">
@@ -436,8 +445,8 @@
                     </div>
                 </div>
             </div>
-            <div class="basis-1/2 lg:basis-1/3 xl:basis-1/4 h-full text-center relative">
-                <div class="w-full flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
+            <div class="basis-1/2 lg:basis-1/3 xl:basis-1/4 text-center relative">
+                <div class="flex justify-center -z-10 pt-12 bg-[#ECF3F6] rounded-[15px_15px_0px_0px]">
                     <img src="/dist/img/doctor2.png" alt="">
                 </div>
                 <div class="w-auto absolute -bottom-20 overflow-hidden h-20 hover:h-fit p-6 shadow-custom bg-white rounded-[0px_0px_15px_15px]">
@@ -653,7 +662,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-24 w-full flexCenter relative flex-col bg-contain bg-no-repeat bg-bgSlider">
+    <section class="mt-24 w-full flexCenter relative flex-col bg-cover bg-no-repeat bg-bgSlider">
         <h2 class="text-4xl font-bold mt-20 text-white">Video khách hàng thăm khám tại Bệnh viện Phương Đông</h2>
         <div class="mt-6 mb-16"><img src="/dist/img/white-line.png" alt=""></div>
         <div class="container px-14 2xl:px-0 flexCenter">
@@ -728,5 +737,263 @@
                 </div>
         </div>
     </section>
+    <section class="mt-24 w-full flexCenter flex-col">
+        <h2 class="text-4xl font-bold mt-20">Chương trình ưu đãi đặc biệt dành cho gói Tư vấn & Tiêm chủng Vắc-xin</h2>
+        <div class="mt-6 mb-16"><img src="/dist/img/blue-line.png" alt=""></div>
+
+        <div class="container h-full py-20 flex swiper mySwiper ">
+            <div class="swiper-wrapper">    
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                    <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                    <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                    <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                    <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                    <ul class="child:mb-6">
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                    </ul>
+                    <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                    <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                    <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                    <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                    <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                    <ul class="child:mb-6">
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                    </ul>
+                    <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                <ul class="child:mb-6">
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                </ul>
+                <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                    <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                    <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                    <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                    <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                    <ul class="child:mb-6">
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                    </ul>
+                    <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                    <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                    <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                    <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                    <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                    <ul class="child:mb-6">
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                        <li class="flex gap-2">
+                            <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                            <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                        </li>
+                    </ul>
+                    <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+                <div class="swiper-slide flexCenter flex-col text-center bg-[#ECF3F6]  p-3 rounded-[1.875rem]">
+                <span class="rounded-[1.875rem] overflow-hidden"><img src="/dist/img/slider-image.jpg" alt=""></span>
+                <h4 class=" text-xl font-bold pt-2 text-[#2891CC]">Ưu đãi Tiêm chủng gói Gia Đình</h4>
+                <h1 class=" text-[2.8125rem] text-[#2891CC] font-bold">999k</h1>
+                <p class="pb-5 text-[#888888]">(Giá cũ: 1999k)</p>
+                <ul class="child:mb-6">
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <span><img src="/dist/img/check-circle.svg" alt=""></span>
+                        <p class="text-[#888888]">Chương trình ưu đãi dành cho Gia đình 4 người</p>
+                    </li>
+                </ul>
+                <a class="py-3 px-9 text-white bg-[#2891CC] rounded-xl font-bold" href="#">ĐĂNG KÝ NGAY</a>
+                </div>
+            </div>
+            <button class="absolute z-50 left-0 top-1/2 prevBtn"><img src="/dist/img/arrow-l.png" alt=""></button>
+            <button class="absolute z-50 right-0 top-1/2 nextBtn"><img src="/dist/img/arrow-r.png" alt=""></button>
+        </div>
+
+    </section>
+    <section class="mt-28 bg-bgSectionEnd bg-cover bg-no-repeat flexCenter relative">
+        <span class="absolute top-0 -translate-y-1/2 right-4"><img src="/dist/img/Spring_Fat_Tall0001 1.png" alt=""></span>
+        <span class="absolute bottom-0 translate-y-1/3 z-40"><img src="/dist/img/logo-footer.png" alt=""></span>
+        <div class="container">
+            <div class="flex mt-48 bottom-0 bg-white relative rounded-[30px_30px_0px_0px]">
+                <div class="absolute right-1/2 top-0 bg-[#ECF3F6] rounded-[30px_30px_0px_0px] w-5/6 translate-x-1/2 -translate-y-full">
+                    <ul class="flex py-3 px-10 child:mr-4">
+                        <li><a href="#"><img src="/dist/img/facebook-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="/dist/img/tweeter-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="/dist/img/youtube-icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="/dist/img/instagram-icon.png" alt=""></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="basis-2/3 p-12">
+                    <h1 class="font-bold text-4xl">9 mũi vắc xin ngoài chương trình tiêm chủng mở rộng cha mẹ không nên bỏ qua</h1>
+                    <ul class="flex gap-4 pt-5 pb-9">
+                        <li class="flex gap-2">
+                            <img src="/dist/img/calc.svg" alt="">
+                            22/07/2022
+                        </li>
+                        <li class="flex gap-2">
+                            <img src="/dist/img/eye.svg" alt="">
+                            149 người đã xem
+                        </li>
+                    </ul>
+                    <p class="font-normal pb-4">Theo khuyến cáo của bác sĩ nhi khoa, để giúp trẻ có được hệ miễn dịch tốt nhất, tránh khỏi các bệnh truyền nhiễm nguy hiểm, ngoài việc tiêm đầy đủ vắc xin trong chương trình tiêm chủng mở rộng, cha mẹ nên lưu ý cho bé tiêm thêm một số mũi quan trọng khác phòng các bệnh như thủy đậu, viêm gan A...Tham khảo ngay 9 mũi tiêm quan trọng cho trẻ trong bài viết dưới đây:</p>
+                    <p class="font-normal pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae vitae ut erat laoreet sit elit. Lorem ridiculus suscipit ipsum quis in fames ultricies nec quis. Semper nulla adipiscing leo mauris, sed. Eu cras mattis posuere imperdiet id mauris egestas. Ante ipsum nisi, diam quis neque, nunc tortor faucibus. Ullamcorper commodo velit ut ipsum dictum platea ullamcorper vitae neque. Potenti amet lacus nisi massa malesuada etiam mauris vivamus. Lacus amet, at mauris scelerisque. Donec amet ultrices libero, congue. In sapien, viverra sed aenean tristique eget. Porttitor libero dapibus integer tempus, fames diam. Elit lectus eget laoreet enim, diam. Dapibus et ultrices dolor, mauris neque augue faucibus a mauris.</p>
+                    <p class="font-normal">Ullamcorper commodo velit ut ipsum dictum platea ullamcorper vitae neque. Potenti amet lacus nisi massa malesuada etiam mauris vivamus. Lacus amet, at mauris scelerisque. Donec amet ultrices libero, congue.</p>
+                </div>
+                <div class="basis-1/3 absolute bottom-0 right-0">
+                    <img src="/dist/img/doctor-heart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-24 flexCenter">
+        <div class="container flexCenter gap-12">
+            <div class="basis-1/2 w-full h-full relative">
+                <h2 style="font-family: 'Dancing Script', sans-serif;" class="absolute 2xl:top-12 font-bold text-4xl">Thực hiện tiêm chủng Vắc-xin để bảo vệ bản thân <br> và bảo vệ những người xung quanh !</h2>
+                <img src="/dist/img/kimtiem.png" alt="">
+            </div>
+            <div class="basis-1/2 rounded-2xl overflow-hidden shadow-custom flexCenter flex-col pb-10">
+                <div class="w-full bg-blue text-white flexCenter flex-col py-5">
+                    <h3 class="font-bold text-xl">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h3>
+                    <p class="text-sm">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</p>
+                </div>
+                <div class="p-9 w-full child:outline-none child:pl-5 child:py-3 child:rounded-md child:bg-[#F5F5F5] child:mb-4 flex flex-col">
+                    <input type="text" placeholder="Họ và tên (*)">
+                    <input type="text" placeholder="Số điện thoại (*)">
+                    <input type="email" placeholder="E-mail">
+                    <input class="pb-12" type="text" placeholder="Nội dung...">
+                </div>
+                <button class="flexCenter bg-orange rounded-full text-white font-bolt  shadow-buttonOrange">
+                    <img class="p-4 lg:py-2" src="/dist/img/Frame.png" alt="phone img">
+                    <p class="pr-4 text-sm xl:text-base">ĐĂNG KÝ TƯ VẤN</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-24 bg-bgFooter bg-cover bg-no-repeat flexCenter">
+        <div class="container flex text-white py-10">
+            <div class="basis-1/3 ml-8 child:pb-2 child:font-bold">
+                <img src="/dist/img/Logo 1.png" alt="">
+                <h2>BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+                <p>Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</p>
+                <p>Email: bvphuongdong@phuongdonghospital.vn</p>
+                <p>Hotline: 1900 1806</p>
+            </div>
+            <div class="basis-2/3 flexCenter flex-col lg:flex-row child:font-bold">
+                <div class=" basis-1/3 lg:child:pb-4 mt-12 text-xs xl:text-sm">
+                    <p>Thời gian mở cửa</p>
+                    <p>Thứ 2 - Chủ nhật: 07:30 -19:00</p>
+                    <p>Cấp cứu 24/7:            0833 015 115</p>
+                </div>  
+                <div class=" basis-1/3 lg:child:pb-4 mt-12 text-xs xl:text-sm">
+                    <p>Liên hệ</p>
+                    <p>Hotline Tiêm chủng:  0911 615 115</p>
+                    <p>Hotline Khoa sản :     0911 615 115</p>
+                </div> 
+                <div class="order-first lg:order-last basis-1/3 flex flex-col">
+                    <p>Mạng xã hội</p>
+                    <ul class="flex gap-6 child-hover:cursor-pointer child:text-[1.75rem]">
+                        <li class="hover:text-blue-700"><i class="fab fa-facebook"></i></li>
+                        <li class="hover:text-blue-500"><i class="fab fa-twitter"></i></li>
+                        <li class="hover:text-red-500"><i class="fab fa-youtube"></i></li>
+                        <li class="hover:text-orange-400"><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/dist/main.js"></script>
+   
 </body>
 </html>

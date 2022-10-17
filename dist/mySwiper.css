@@ -1,0 +1,25 @@
+.swiper-slide-active {
+    background: linear-gradient(135deg, #4EBEFF 0%, #0679BB 100%);
+    scale: 1.15;
+}
+.swiper-slide-active > h1{
+    color: #FFFFFF;
+}
+.swiper-slide-active > h4{
+    color: #FFFFFF;
+}
+.swiper-slide-active > ul > li > p{
+    color: #FFFFFF;
+}
+.swiper-slide-active > p{
+    color: #FFFFFF;
+}
+.swiper-slide-active > ul > li > span > img{
+    filter: brightness(100);
+}
+
+
+.swiper-slide-active > a {
+    background-color: #FFFFFF;
+    color: #2891CC;
+}
